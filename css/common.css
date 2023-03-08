@@ -49,11 +49,12 @@ header {
   font-size: 11px;
   margin: 0 auto;
   padding: 0;
+
 }
 
 #login_box a {
   text-decoration: none;
-  color: #4d4d4d;
+  color: #4d4d4d;  
 }
 
 #login_box>.log_biz {
@@ -71,16 +72,26 @@ header {
 
 #login_box>.log_text {
   width: 330px;
-  height: 25px;
+  height: 35px;
   float: right;
   margin: 0;
   padding-right: 20px;
 }
 
+#login_box>.log_text {
+  width: 330px;
+  height: 35px;
+  float:right;
+  box-sizing: border-box;
+  padding:0;
+}
+
+
 #login_box>.log_text>ul>li>a {
   text-decoration: none;
-  float: left;
-  margin: 15px 0 0 20px;
+  float:left;
+  display:flex;
+  margin: 15px 20px 0 0;
 }
 
 /*상단 로고 및 메뉴 박스*/
@@ -108,7 +119,7 @@ header {
 /*헤드 서비스 메뉴*/
 
 #topbox>.headservice {
-  width: 700px;
+  width: 680px;
   height: 30px;
   float: right;
   margin-top: 25px;
@@ -121,18 +132,24 @@ header {
   color: #333;
   float: left;
   letter-spacing: 0.4;
+  vertical-align: middle;
+  margin-top: 2px;
   margin-right: 13px;
+
 }
 
-input {
+#topbox>.headservice>ul>li>input {
   background-color: rgb(255, 255, 255);
-  width: 245px;
+  width: 210px;
   height: 25px;
-  text-align: center;
+  text-align: left;
   border-radius: 25px;
-  padding: 5px;
+  padding-left: 13px;
   border: 0.5px solid tomato;
   display: block;
+  vertical-align: bottom;
+  margin-bottom: 10px;
+  font-size: 12px;
 }
 
 /*내비게이션*/
@@ -150,7 +167,7 @@ nav>ul>li>a {
   color: #000;
   font-weight: 500;
   float: left;
-  
+
 
 }
 
